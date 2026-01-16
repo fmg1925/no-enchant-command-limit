@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "no-enchant-command-limit",
+	"version": "${version}",
+	"name": "No Enchant Command Limit",
+	"description": "Removes the vanilla enchanting limit in the enchant command, allows overwriting existing enchantments, deletes the enchantment if desired level is 0",
+	"authors": [
+		"fmg1925"
+	],
+	"contact": {
+		"homepage": "https://porneliushubert.fun/",
+		"sources": "https://github.com/fmg1925"
+	},
+	"license": "GPLv3",
+	"icon": "assets/no-enchant-command-limit/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.fmg1925.noenchantcommandlimit.NoEnchantCommandLimit"
+		]
+	},
+	"mixins": [
+		"no-enchant-command-limit.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": ">=1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
